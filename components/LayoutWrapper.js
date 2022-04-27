@@ -8,6 +8,10 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import Image from 'next/image'
 
+const loader = ({ src }) => {
+  return `http://localhost:3000/${src}`
+}
+
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
